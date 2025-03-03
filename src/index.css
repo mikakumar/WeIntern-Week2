@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import "@flaticon/flaticon-uicons/css/all/all";
+@import 'tailwindcss';
+
+@tailwind base; 
+@tailwind components;
+@tailwind utilities; 
+
+:root {
+  color: rgba(255, 255, 255, 0.87);
+  /*background-color:#790638;*/
+  background-image: linear-gradient(to bottom right,black,#520024);
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;  
+
+}
+
+.font-dm{
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;  
+}
+
+@layer components{
+
+  .nav-container-dark{
+    @apply max-h-[8vh] h-[10vh] w-[100%] bg-black flex items-center justify-between;
+    position: fixed;
+    top: 0;
+    opacity: 100%;
+    width: 100%
+}
+
+.nav-container-light{
+  @apply max-h-[8vh] h-[10vh] w-[100%] flex items-center justify-between;
+  background-color:rgb(41, 2, 14);
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.nav-logo{
+  @apply max-h-[7vh] w-[4vw] relative mx-[1vw] mt-[0.4vh]
+}
+
+.nav-menu{
+    @apply flex items-center list-none gap-[40px]
+}
+
+.nav-menu .active-link-dark{
+  @apply px-[2vw] py-[2.5vh];
+  background-color:rgb(173, 6, 59);
+  color: #ffc627;
+}
+
+.nav-menu .active-link-light{
+  @apply px-[2vw] py-[2.5vh];
+  background-color:rgb(186, 0, 59);
+  color: #ffc627
+}
+
+
+.nav-menu li a{
+    @apply no-underline
+}
+
+.contact-button-dark{
+  @apply mr-[3vw] px-[2vw] py-[1vh] rounded-[40px];
+  background-color: rgb(173, 6, 59);
+}
+
+.contact-button-light{
+  @apply mr-[3vw] px-[2vw] py-[1vh] rounded-[40px];
+  background-color: rgb(173, 6, 59);
+}
+
+.contact-button a{
+  @apply no-underline text-white
+}
+
+.header-container-dark{
+  @apply h-[95vh] flex items-center justify-center;
+}
+
+.header-container-light{
+  @apply h-[95vh] flex items-center justify-center;
+  background-image: linear-gradient(to bottom right,#f34191,#f34191, #ffc627,#ffa6ce)
+}
+
+.header-img{
+  @apply mt-[10vh] ml-[5vw] w-[40vw];
+}
+
+.header-content{
+  @apply block mr-[10vw] ml-[5vw] w-[100%]; 
+}
+
+.header-content h1{
+  @apply text-[7vh];
+}
+
+.header-content p{
+  @apply text-[4vh];
+}
+
+.header-content .header-name-dark{
+ /*background: linear-gradient(to right,black,#520024);*/
+background: linear-gradient(to bottom right,#ff92c3,#e66f6f,#ffc627,#df0000); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; 
+}
+
+.header-content .header-name-light{
+  background: linear-gradient(to right,black,#520024); 
+ -webkit-text-fill-color: transparent; 
+ -webkit-background-clip: text; 
+ }
+
+.header-connect{    
+  @apply flex items-center whitespace-nowrap w-[14vw] h-[8vh] text-white px-[2vw] py-[1vh] rounded-[30px] mt-[6vh];
+  background-color: rgb(173, 6, 59)
+}
+
+.header-connect a{
+  text-decoration: none;
+  color: white;
+}
+
+.about-container-dark{
+  @apply h-[100vh] pt-[5vh] block bg-black;
+}
+
+.about-container-light{
+  @apply h-[100vh] pt-[5vh] block;
+}
+
+.about-heading{
+  @apply text-center pt-[10vh] text-4xl;
+  background: linear-gradient(to bottom right,#ff92c3,#e66f6f,#ffc627,#df0000); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; 
+}
+
+.about-block{
+  @apply flex relative mr-[5vw] ml-[17vw] mt-[6vh]
+}
+
+.services-container-dark{
+  @apply h-[100vh] pt-[5vh] flex flex-col bg-black
+}
+
+.services-container-light{
+  @apply h-[100vh] pt-[5vh] flex flex-col
+}
+
+.services-heading{
+  @apply text-center pt-[5vh] mb-[10vh] text-4xl;
+  background: linear-gradient(to bottom right,#ff92c3,#e66f6f,#ffc627,#df0000); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; 
+}
+
+.services-box{
+  @apply flex flex-row mx-[5vw] gap-9 text-center
+}
+
+.services-card{
+  @apply max-w-[30vw] h-[65vh] border-2 border-white px-[2vh] py-[2vw];
+}
+
+.card-number{
+  background: linear-gradient(to bottom right,#ff92c3,#e66f6f,#ffc627,#df0000); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; 
+}
+
+.portfolio-container-dark{
+  @apply h-[100vh] pt-[5vh] flex flex-col bg-black;
+}
+
+.portfolio-container-light{
+  @apply h-[100vh] pt-[5vh] flex flex-col;
+}
+
+.portfolio-heading{
+  @apply mt-[5vh] mb-[15vh] text-4xl text-center;
+  background: linear-gradient(to bottom right,#ff92c3,#e66f6f,#ffc627,#df0000); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text;
+}
+
+.sample-container{
+  @apply flex flex-row gap-12 mx-[3vw]
+}
+
+.container-image{
+  @apply h-[30vh] w-[30vw] mb-[5vh]
+}
+
+.contact-container-dark {
+  @apply h-[100vh] pt-[5vh] flex flex-col bg-black;
+}
+
+.contact-container-light{
+  @apply h-[100vh] text-center;
+}
+
+.contact-heading{
+  @apply  mb-[10vh] text-4xl text-center;
+  background: linear-gradient(to bottom right,#ff92c3,#e66f6f,#ffc627,#df0000); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; 
+}
+
+.input-box{
+  @apply px-[3vw] w-[40vw] h-[10vh];
+  background-color:rgb(33, 3, 16);
+  color: #ffc627;
+}
+
+.message-box{
+  @apply px-[3vw] pt-[3vh] w-[40vw] h-[30vh];
+  background-color:rgb(33, 3, 16);
+  color: #ffc627;
+}
+
+.submit-button-light{
+  @apply bg-black w-[8vw] h-[8vh];
+  color: #ffc627
+}
+
+.submit-button-dark{
+  @apply w-[8vw] h-[8vh];
+  background-color:rgb(44, 2, 20);  
+  color:#ffc627
+}
+
+}
+
